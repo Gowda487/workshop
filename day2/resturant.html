@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+<body>
+    {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    header {
+        background-color: #green;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .menu-section {
+        background-color: white;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 600px;
+    }
+    .menu-section h2 {
+        border-bottom: 2px solid green;
+        padding-bottom: 10px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+    .menu-item:last-child {
+        border-bottom: none;
+    }
+    .item-name {
+        font-weight: bold;
+    }
+    .item-price {
+        color: green
+    }
+    footer {
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+
+<header>
+Delicious Eats
+</header>
+
+<main>
+<div class="menu-section">
+    <h2>Starters</h2>
+    <div class="menu-item">
+        <span class="item-name">Bruschetta</span>
+        <span class="item-price">$8.00</span>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Stuffed Mushrooms</span>
+        <span class="item-price">$9.00</span>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Main Courses</h2>
+    <div class="menu-item">
+        <span class="item-name">Grilled Chicken</span>
+        <span class="item-price">$15.00</span>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Pasta Carbonara</span>
+        <span class="item-price">$14.00</span>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>Desserts</h2>
+    <div class="menu-item">
+        <span class="item-name">Tiramisu</span>
+        <span class="item-price">$7.00</span>
+    </div>
+    <div class="menu-item">
+        <span class="item-name">Cheesecake</span>
+        <span class="item-price">$6.00</span>
+    </div>
+</div>
+</main>
+
+<footer>
+© 2024 Delicious Eats Menu
+</footer>
+
+</body>
+</html>
