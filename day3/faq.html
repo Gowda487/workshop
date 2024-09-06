@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+     integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Freuently Asked Questions</h1>
+
+    <div class="faq active "> 
+        <button class="accordion">
+            What is Sports?
+            <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+        <p>
+            A human activity involving physical exertion and skill as the 
+            primary focus of the activity, with elements of competition or 
+            social participation  is generally recognised as a sport.
+        </p>
+
+    </div>
+    </div>
+    <div class="faq"> 
+        <button class="accordion">
+            How sports plays an important role?
+            <i class=" fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="pannel">
+        <p>
+             Sports play an important role in many areas of life, including physical health, mental health,
+              social skills, and academic skills:
+        </p>
+
+    </div>
+    </div>
+    </div>
+    <script>
+        var acc=document.getElementsByClassName
+        ("accordion");
+        var i;
+
+        for(i=0;i<acc.length;i++){
+            acc[i].addEventListener("click",function
+            (){ 
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle
+                ("active")
+
+                var pannel=this.nextElementSibling;
+
+                if(pannel.style.display==="block"){
+                    pannel.style.display="none";
+                }else{
+                    pannel.style.display="block";
+                }
+            });
+            }
+    </script>
+</body>
+</html>
